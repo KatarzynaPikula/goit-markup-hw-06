@@ -806,8 +806,73 @@ ul {
 	height: 30px;
 }
 .modal-button:hover {
-	border: 1px solid var(--blue);
+	border: 1px solid var(--active-color);
 	cursor: pointer;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+}
+
+.subscribe-newsletter-title {
+	color: var(--second-color);
+	padding-top: 72px;
+	padding-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.subscribe-newsletter-form {
+	display: flex;
+	flex-direction: row;
+}
+.subscribe-newsletter-form-box {
+	display: flex;
+	flex-direction: row;
+}
+
+.subscribe-newsletter {
+	margin-left: 78px;
+}
+.subscribe-newsletter-form-box-save {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	margin-left: 370px;
+}
+.subscribe-newsletter-form-box-email {
+	position: absolute;
+	width: 358px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+}
+
+.input {
+	width: 358px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+	color: var(--first-color);
+	background-color: var(--active-color);
+	border: 1px solid var(--descr-color);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	padding-left: 16px;
+	margin-right: 12px;
+	transition-property: background-color, border-color, filter, border-radius;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:hover :focus {
+	outline: none;
+	background-color: var(--active-color);
+	border: 2px solid $colorSubscribeNewsletterBorderEmailHoverFocus;
+	border-color: $colorSubscribeNewsletterBorderEmailHoverFocus;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 5px;
 }
