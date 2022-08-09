@@ -693,7 +693,26 @@
 								</svg>
 							</a>
 						</li>
-					</div></ul>
+					</ul></div>
+					 <div class="subscribe-newsletter">
+        <div class="subscribe-newsletter-title"> Zapisz się do newslettera</div>
+         <form class="subscribe-newsletter-form" method="get">
+          <div class="subscribe-newsletter-form-box">
+            <label for="subscribe-newsletter">
+              <input type="email" name="newsletter-email" placeholder="E-mail"
+                class="subscribe-newsletter-form-box-email" id="subscribe-newsletter" required
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+            </label>
+            <button type="submit" class="subscribe-newsletter-form-box-save">
+              Zapisz się
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="./images/icons.svg#icon-icon-send">
+                </use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
 				</div>
 			</section>
 		</footer>
