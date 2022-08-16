@@ -872,9 +872,11 @@ ul {
 	color: var(--descr-color);
 }
 .order-agreement {
-	margin-top: 20px;
-	margin-bottom: 30px;
+	position: relative;
+	margin: auto;
+	padding-top: 20px;
 }
+
 .modal-order-agreement-label {
 	font-family: "Roboto";
 	font-style: normal;
@@ -883,12 +885,21 @@ ul {
 	line-height: 24px;
 }
 .input-checkbox {
-	margin-left: 17px;
+	position: absolute;
+	top: 3px;
+
+	width: 16px;
+	height: 16px;
+	opacity: 1;
+	cursor: pointer;
+	z-index: 1;
+	margin-top: 21px;
 }
 .modal-order-send {
 	width: 200px;
 	height: 50px;
 	margin-left: 124px;
+	margin-top: 30px;
 	background-color: var(--active-color);
 	text-align: center;
 	margin-bottom: 40px;
@@ -904,6 +915,24 @@ ul {
 	position: relative;
 	margin: 15px;
 	top: -45px;
+}
+
+.order-icon-checkbox {
+	fill: var(--second-color);
+	stroke: var(--second-color);
+
+	stroke-width: 0.4267;
+	stroke-miterlimit: 4;
+}
+.order-icon-checkbox:active :focus {
+	fill: var(--active-color);
+
+	stroke: var(--second-b-color);
+}
+.order-icon-checkbox:active :active {
+	fill: var(--active-color);
+
+	stroke: var(--second-b-color);
 }
 .textarea-box {
 	border: 1px solid rgba(33, 33, 33, 0.2);
