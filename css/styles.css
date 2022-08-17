@@ -901,6 +901,7 @@ ul {
 	margin-left: 124px;
 	margin-top: 30px;
 	background-color: var(--active-color);
+
 	text-align: center;
 	margin-bottom: 40px;
 	font-family: "Roboto";
@@ -910,6 +911,8 @@ ul {
 	line-height: 30px;
 	color: var(--second-color);
 	cursor: pointer;
+	border: 0px;
+	border-radius: 4px;
 }
 
 .order-icon {
