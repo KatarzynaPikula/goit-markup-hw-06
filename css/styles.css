@@ -909,6 +909,7 @@ ul {
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--second-color);
+	cursor: pointer;
 }
 
 .order-icon {
@@ -993,10 +994,10 @@ ul {
 	justify-content: space-evenly;
 	border-radius: 4px;
 	border: 0px;
+	cursor: pointer;
 }
 .subscribe-newsletter-form-box-email {
 	position: absolute;
-
 	width: 358px;
 	height: 47px;
 	display: flex;
@@ -1004,7 +1005,6 @@ ul {
 	position: absolute;
 	background-color: var(--second-b-color);
 	color: var(--background-color);
-
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
