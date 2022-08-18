@@ -872,21 +872,8 @@ ul {
 	color: var(--descr-color);
 }
 .order-agreement {
-	position: relative;
-	left: 15px;
-	margin-top: 20px;
-	border: none;
-
-	display: flex;
-	align-items: center;
-	position: relative;
-	width: 16px;
-	height: 15px;
-	border: 2px solid #212121;
-	border-radius: 3px;
-
-	z-index: 4;
-	cursor: pointer;
+	margin-left: 35px;
+	padding-top: 10px;
 }
 .order-agreement-check {
 	appearance: none;
@@ -899,56 +886,27 @@ ul {
 	cursor: pointer;
 }
 .input-checkbox {
-	position: relative;
-	top: 0px;
-	left: 0px;
-
-	opacity: 0;
-	cursor: pointer;
+	position: absolute;
+	top: 2px;
+	left: -25px;
 	width: 16px;
 	height: 15px;
-
+	opacity: 1;
+	cursor: pointer;
 	z-index: 1;
-	background-color: red;
 }
 
-.order-agreement-check:active {
-	appearance: inherit;
-	top: 50%;
-	left: 50%;
-	transform: translate(0, 0);
-	width: 100%;
-	height: 100%;
-	z-index: 2;
+.order-agreement-check {
+	position: relative;
+	margin: auto;
 	cursor: pointer;
-}
-.order-agreement-check:focus {
-	appearance: inherit;
-	top: 0%;
-	left: 0%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 100%;
-	z-index: 2;
-	cursor: pointer;
-}
-.modal-order-agreement-label {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	display: block;
-	height: 24px;
-	width: 395px;
-	margin-left: 8px;
 }
 
 .modal-order-send {
 	width: 200px;
 	height: 50px;
 	margin-left: 124px;
-	margin-top: 74px;
+	margin-top: 30px;
 	background-color: var(--active-color);
 
 	text-align: center;
@@ -971,12 +929,19 @@ ul {
 }
 
 .order-icon-checkbox {
-	fill: var(--second-color);
-	stroke: var(--second-color);
-
-	stroke-width: 0.4267;
-	stroke-miterlimit: 4;
-	margin-top: 1px;
+	display: none;
+	position: absolute;
+	z-index: 10;
+	height: 16px;
+	width: 16px;
+	z-index: 5;
+	top: 3px;
+	left: -25px;
+}
+.modal-order-agreement-label {
+	font-size: 14px;
+	line-height: 1.71;
+	margin-top: 20px;
 }
 .order-icon-checkbox:active :focus {
 	fill: var(--active-color);
