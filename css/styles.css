@@ -873,33 +873,82 @@ ul {
 }
 .order-agreement {
 	position: relative;
-	margin: auto;
-	padding-top: 20px;
+	left: 15px;
+	margin-top: 20px;
+	border: none;
+
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 16px;
+	height: 15px;
+	border: 2px solid #212121;
+	border-radius: 3px;
+
+	z-index: 4;
+	cursor: pointer;
+}
+.order-agreement-check {
+	appearance: none;
+	top: 0%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	cursor: pointer;
+}
+.input-checkbox {
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+	opacity: 0;
+	cursor: pointer;
+	width: 16px;
+	height: 15px;
+
+	z-index: 1;
+	background-color: red;
 }
 
+.order-agreement-check:active {
+	appearance: inherit;
+	top: 50%;
+	left: 50%;
+	transform: translate(0, 0);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	cursor: pointer;
+}
+.order-agreement-check:focus {
+	appearance: inherit;
+	top: 0%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	cursor: pointer;
+}
 .modal-order-agreement-label {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
+	display: block;
+	height: 24px;
+	width: 395px;
+	margin-left: 8px;
 }
-.input-checkbox {
-	position: absolute;
-	top: 3px;
 
-	width: 16px;
-	height: 16px;
-	opacity: 1;
-	cursor: pointer;
-	z-index: 1;
-	margin-top: 21px;
-}
 .modal-order-send {
 	width: 200px;
 	height: 50px;
 	margin-left: 124px;
-	margin-top: 30px;
+	margin-top: 74px;
 	background-color: var(--active-color);
 
 	text-align: center;
@@ -927,6 +976,7 @@ ul {
 
 	stroke-width: 0.4267;
 	stroke-miterlimit: 4;
+	margin-top: 1px;
 }
 .order-icon-checkbox:active :focus {
 	fill: var(--active-color);
