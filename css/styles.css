@@ -825,6 +825,7 @@ ul {
 	cursor: pointer;
 	margin-top: 4px;
 	cursor: pointer;
+	padding: 0;
 }
 
 .modal-order-title {
